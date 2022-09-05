@@ -24,7 +24,7 @@ function workOutGradeAv($grades) {
 $averagegrade=$grades/5;
 
 
-echo "The Average Mark is: ".$averagegrade  ;
+echo "The Average Mark is: ".$averagegrade;
 }
 $grades=0;
 if($_POST["grade1"]<40){
@@ -35,21 +35,22 @@ echo "Error! Check Input.";
 }
 
 
-}elseif($_POST["grade1"]<40){
-    echo "You Are Failed in this subject!"; 
-    
-    if ($_POST["grade2"] < 0 or $_POST["grade2"] > 101 ) {
+}
+elseif($_POST["grade2"]<40){
+    echo "You Are Failed in this subject!"; if ($_POST["grade2"] < 0 or $_POST["grade2"] > 101 ) {
 echo "Error! Check Input.";
 }
-} elseif($_POST["grade1"]<40){
+}
+elseif($_POST["grade3"]<40){
     echo "You Are Failed in this subject!";if ($_POST["grade3"] < 0 or $_POST["grade3"] >101)  {
 echo "Error! Check Input.";
 }
-}if($_POST["grade1"]<40){
+}
+if($_POST["grade4"]<40){
     echo "You Are Failed in this subject!"; if ($_POST["grade4"] < 0 or $_POST["grade4"] >101)  {
 echo "Error! Check Input.";
 }
-} elseif($_POST["grade1"]<40){
+} if($_POST["grade5"]<40){
     echo "You Are Failed in this subject!";if ($_POST["grade5"] < 0 or  $_POST["grade5"]>101 ) {
 echo "Error! Check Input.";
 }
